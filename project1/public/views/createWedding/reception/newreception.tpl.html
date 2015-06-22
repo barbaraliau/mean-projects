@@ -1,45 +1,40 @@
-<div class="container">
-	<div class="row">
-		<div class="col-sm-12">
-			<div class="jumbotron">
-				<h2>Reception</h2>
-			</div>
-		</div>
-	</div>
+<div class="my-mod-jumbotron">
+	<h2>Reception</h2>
+</div>
 
-	<div ng-include src="'views/createWedding/navbarcreate.inc.html'"></div>
+	<div class="include-me" ng-include src="'views/createWedding/navbarcreate.inc.html'"></div>
 
 	<form class="form-horizontal">
 		<div class="form-group">
 			<label class="col-sm-2 control-label">Date:</label>
-			<div class="col-sm-10">
-				<input type="date" class="form-control" ng-model="reception.date" placeholder="reception date">
-			</div>	
-		</div>
-
-		<div class="form-group">
-			<label class="col-sm-2 control-label">Time:</label>
-			<div class="col-sm-10">
-				<input type="datetime" class="form-control" ng-model="reception.time" placeholder="reception time">
-			</div>	
-		</div>
-
-		<div class="form-group">
-			<label class="col-sm-2 control-label">Location:</label>
-			<div class="col-sm-10">
-				<input type="text" class="form-control" ng-model="reception.location" placeholder="reception location">
-			</div>	
-		</div>
-
-		<div class="form-group">
-			<label class="col-sm-2 control-label">Reception Event Description:</label>
-			<div class="col-sm-10">
-				<textarea class="form-control" rows="10" cols="100" ng-model="reception.description" placeholder="Describe your reception event"></textarea>
+			<div class="col-sm-9">
+				<input type="date" class="form-control" ng-model="reception.date" placeholder="Reception date">
 			</div>
 		</div>
 
 		<div class="form-group">
-			<div class="col-sm-10">
+			<label class="col-sm-2 control-label">Time:</label>
+			<div class="col-sm-9">
+				<input type="datetime" class="form-control" ng-model="reception.time" placeholder="Reception time">
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label class="col-sm-2 control-label">Location:</label>
+			<div class="col-sm-9">
+				<input type="text" class="form-control" ng-model="reception.location" placeholder="Reception location">
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label class="col-sm-2 control-label">Reception Event Description:</label>
+			<div class="col-sm-9">
+				<textarea class="form-control" rows="10" cols="100" ng-model="reception.description" placeholder="Describe your reception event"></textarea>
+			</div>
+		</div>
+<br/>
+		<div class="form-group text-center">
+			<div class="col-sm-12">
 				<button class="btn btn-primary" ng-click="addReceptionBtnClicked()">Add</button>
 				<button class="btn btn-primary" ng-click="cancelReceptionBtnClicked()">Cancel</button>
 				<button class="btn btn-primary" ng-click="editReceptionBtnClicked()">Edit</button>

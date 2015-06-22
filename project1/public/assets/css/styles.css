@@ -1,0 +1,60 @@
+/*===FONTS===*/
+@font-face {
+	font-family: Brotherhood;
+	src: url(../fonts/Brotherhood_Script.ttf);
+}
+
+html, body {
+	background-color: rgb(250, 250, 250);
+}
+
+#mainNav {
+	padding: 10px;
+	margin: 20px;
+	box-sizing: border-box;
+}
+
+ul .nav .nav-tabs li:active{
+	background-color: #fff;
+}
+
+.jumbotron h2 {
+	text-align: center;
+}
+
+.jumbotron p {
+	text-align: center;
+}
+
+.jumbotron button {
+	text-align: center;
+}
+
+.button-mod {
+	color: #fff;
+	text-decoration: none;
+}
+
+.button-mod:hover {
+	color: black;
+}
+
+.my-mod-jumbotron{
+	position: absolute;
+	height: 70px;
+	width: 100%;
+	text-align: center;
+	padding: 10px 0 20px 0;
+	margin: 20px 0 30px 0;
+}
+
+.include-me {
+	position: relative;
+	top: 130px;
+}
+
+.form-horizontal {
+	padding-top: 30px;
+	position: relative;
+	top: 130px;
+}
